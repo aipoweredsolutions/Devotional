@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f0e6">
-  <link rel="icon" id="appIcon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232e5e4e'/%3E%3Cpath d='M17 39c13 0 24-8 30-22 1 18-8 32-22 32-7 0-11-4-11-10Z' fill='%23d9c78b'/%3E%3Cpath d='M15 49c8-11 17-18 29-25' fill='none' stroke='%232e5e4e' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="apple-touch-icon" id="appTouchIcon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232e5e4e'/%3E%3Cpath d='M17 39c13 0 24-8 30-22 1 18-8 32-22 32-7 0-11-4-11-10Z' fill='%23d9c78b'/%3E%3Cpath d='M15 49c8-11 17-18 29-25' fill='none' stroke='%232e5e4e' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <meta name="theme-color" content="#fff5f7">
+  <link rel="icon" id="appIcon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23a74768'/%3E%3Cpath d='M17 39c13 0 24-8 30-22 1 18-8 32-22 32-7 0-11-4-11-10Z' fill='%23d9c78b'/%3E%3Cpath d='M15 49c8-11 17-18 29-25' fill='none' stroke='%23a74768' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="apple-touch-icon" id="appTouchIcon" sizes="180x180" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23a74768'/%3E%3Cpath d='M17 39c13 0 24-8 30-22 1 18-8 32-22 32-7 0-11-4-11-10Z' fill='%23d9c78b'/%3E%3Cpath d='M15 49c8-11 17-18 29-25' fill='none' stroke='%23a74768' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
   <meta name="description" content="A forty-day devotional journey to strengthen your faith through God's Word.">
   <title>40 Days of Claiming God's Promises</title>
   <style>
@@ -192,6 +192,9 @@ a { color: inherit; }
 .online-dot { width: 7px; height: 7px; margin-right: 5px; display: inline-block; border-radius: 50%; background: var(--success); }
 .main { margin-left: var(--sidebar); padding: 0 42px 40px; }
 .topbar { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.shop-banner { display: flex; justify-content: center; align-items: center; gap: 5px; margin: 0 0 20px; padding: 8px 14px; border: 1px solid color-mix(in srgb, var(--primary) 22%, var(--line)); border-radius: 10px; color: var(--muted); background: var(--paper-soft); font-size: 0.75rem; line-height: 1.4; text-align: center; }
+.shop-banner a { color: var(--primary-deep); font-weight: 800; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+.shop-banner a:hover { color: var(--primary); }
 .breadcrumb { color: var(--muted); font-size: 0.75rem; }
 .breadcrumb strong { color: var(--ink); font-weight: 700; }
 .top-actions { display: flex; align-items: center; gap: 10px; }
@@ -662,17 +665,17 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .breadcrumb span:first-child { font-family: var(--font-serif); font-style: italic; letter-spacing: 0; }
 /* Premium devotional finish */
 :root {
-  --canvas: #f5f1e8;
-  --paper: #fcfaf5;
-  --paper-soft: #f0eadf;
-  --line: #e5dccb;
-  --ink: #2f382f;
-  --muted: #77766d;
-  --primary: #294f3f;
-  --primary-deep: #203f32;
-  --gold: #b89a55;
-  --bronze: #806a43;
-  --beige: #e7ddc9;
+  --canvas: #fff5f7;
+  --paper: #fffafb;
+  --paper-soft: #fbe8ee;
+  --line: #efd8e0;
+  --ink: #49303a;
+  --muted: #856a74;
+  --primary: #a74768;
+  --primary-deep: #81334f;
+  --gold: #bd8460;
+  --bronze: #956071;
+  --beige: #f3d7e0;
   --shadow-sm: 0 2px 8px rgba(48,43,32,.035), 0 14px 34px rgba(48,43,32,.045);
   --shadow-lg: 0 12px 40px rgba(48,43,32,.08);
 }
@@ -806,7 +809,7 @@ body[data-theme="dark"] .todays-promise { background-color: var(--paper); }
 }
   </style>
 </head>
-<body>
+<body data-accent="pink" data-light-accent="pink">
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="app-shell">
     <!-- Sidebar navigation -->
@@ -841,6 +844,10 @@ body[data-theme="dark"] .todays-promise { background-color: var(--paper); }
           <button class="icon-btn" id="topSearchBtn" aria-label="Open journey search" title="Search devotionals"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5" stroke-linecap="round"/></svg></button>
         </div>
       </header>
+      <aside class="shop-banner" aria-label="Purchase the devotional">
+        <span>Want the complete devotional?</span>
+        <a href="https://devotional-bice.vercel.app/" target="_blank" rel="noopener noreferrer">40 Days of Claiming God’s Promises</a>
+      </aside>
 
       <!-- HOME VIEW -->
       <section class="section-view active" id="view-home" aria-labelledby="homeTitle">
@@ -1213,7 +1220,7 @@ body[data-theme="dark"] .todays-promise { background-color: var(--paper); }
         <label class="book-export-name-label" for="bookPaperSize">Paper size</label>
         <select class="field" id="bookPaperSize"><option value="A4">A4</option><option value="letter">US Letter</option></select>
         <label class="book-export-name-label" for="bookTheme">Book colour</label>
-        <select class="field" id="bookTheme"><option value="green">Classic green</option><option value="pink">Pink</option><option value="turquoise">Turquoise</option><option value="purple">Purple</option><option value="glacier">Glacier blue</option></select>
+        <select class="field" id="bookTheme"><option value="green">Classic green</option><option value="pink" selected>Pink</option><option value="turquoise">Turquoise</option><option value="purple">Purple</option><option value="glacier">Glacier blue</option></select>
         <fieldset class="book-export-options">
           <legend>Include</legend>
           <label for="bookIncludeNotes"><input id="bookIncludeNotes" type="checkbox" checked> Include my journal notes</label>
@@ -4406,8 +4413,8 @@ What former label or habit still has a strong hold on your thinking? Bring it to
             gratitudeEntries,
             name: reliableGet('nameField')?.value || '',
             theme: document.body.getAttribute('data-theme') || 'light',
-            accent: document.body.getAttribute('data-accent') || 'green',
-            lightAccent: document.body.getAttribute('data-light-accent') || 'green',
+            accent: document.body.getAttribute('data-accent') || 'pink',
+            lightAccent: document.body.getAttribute('data-light-accent') || 'pink',
             fontSize: document.documentElement.getAttribute('data-font-size') || 'medium',
             welcomed: existing.welcomed === true,
             // Preserve streak dates and certificate date.
@@ -4764,8 +4771,8 @@ What former label or habit still has a strong hold on your thinking? Bring it to
           data.memorized = Object.fromEntries(Object.entries(memorySource).filter(([day, date]) => /^(?:[1-9]|[1-3][0-9]|40)$/.test(day) && typeof date === 'string' && Number.isFinite(Date.parse(date))));
           data.name = typeof data.name === 'string' ? data.name.slice(0, 40) : '';
           data.theme = data.theme === 'dark' ? 'dark' : 'light';
-          data.accent = ['green', 'navy', 'purple', 'pink'].includes(data.accent) ? data.accent : 'green';
-          data.lightAccent = ['green', 'pink', 'purple', 'turquoise', 'glacier'].includes(data.lightAccent) ? data.lightAccent : 'green';
+          data.accent = ['green', 'navy', 'purple', 'pink'].includes(data.accent) ? data.accent : 'pink';
+          data.lightAccent = ['green', 'pink', 'purple', 'turquoise', 'glacier'].includes(data.lightAccent) ? data.lightAccent : 'pink';
           data.fontSize = ['small', 'medium', 'large'].includes(data.fontSize) ? data.fontSize : 'medium';
           data.certificateDate = typeof data.certificateDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(data.certificateDate) ? data.certificateDate : '';
           // One-time migration: legacy single-note-per-day storage becomes
@@ -4822,8 +4829,8 @@ What former label or habit still has a strong hold on your thinking? Bring it to
           if (reliableGet('welcomeNameTop')) reliableGet('welcomeNameTop').textContent = data.name || '';
           if (reliableGet('certificateName')) reliableGet('certificateName').textContent = data.name || 'A faithful pilgrim';
           if (reliableGet('certificateDate')) reliableGet('certificateDate').textContent = data.certificateDate ? fmtDate(data.certificateDate) : '—';
-          document.body.setAttribute('data-accent', data.accent || 'green');
-          document.body.setAttribute('data-light-accent', data.lightAccent || 'green');
+          document.body.setAttribute('data-accent', data.accent || 'pink');
+          document.body.setAttribute('data-light-accent', data.lightAccent || 'pink');
           setTheme(data.theme === 'dark');
           document.documentElement.setAttribute('data-font-size', data.fontSize || 'medium');
           fontSizeSwatches.forEach(button => {
@@ -4832,12 +4839,12 @@ What former label or habit still has a strong hold on your thinking? Bring it to
             button.setAttribute('aria-pressed', selected);
           });
           themeSwatches.forEach(button => {
-            const selected = button.getAttribute('data-accent') === (data.accent || 'green');
+            const selected = button.getAttribute('data-accent') === (data.accent || 'pink');
             button.classList.toggle('selected', selected);
             button.setAttribute('aria-pressed', String(selected));
           });
           lightAccentSwatches.forEach(button => {
-            const selected = button.getAttribute('data-light-accent') === (data.lightAccent || 'green');
+            const selected = button.getAttribute('data-light-accent') === (data.lightAccent || 'pink');
             button.classList.toggle('selected', selected);
             button.setAttribute('aria-pressed', String(selected));
           });
@@ -5500,7 +5507,7 @@ What former label or habit still has a strong hold on your thinking? Bring it to
             purple: ['#4a2f6b', '#704a9a', '#9a73c6', '#d9c8ee', '#faf7ff', '#eee7f7', '#faf7ff'],
             glacier: ['#1f4f78', '#397caf', '#5da3d6', '#bcdcf2', '#f4f9ff', '#e3effa', '#f4f9ff']
           };
-          const themeName = (/book-theme-(pink|turquoise|purple|glacier)/.exec(book.className) || [])[1] || 'green';
+          const themeName = (/book-theme-(pink|turquoise|purple|glacier)/.exec(book.className) || [])[1] || 'pink';
           const [P_DEEP, P_TEXT, P_BRIGHT, P_PALE, P_CREAM, P_MINT, P_IVORY] = PALETTES[themeName].map(hexRg);
           const INK = '0.13 0.15 0.15', GREEN = P_DEEP, GOLD = P_TEXT, GOLDL = P_BRIGHT, GOLDP = P_PALE, CREAM = P_CREAM, MINT = P_MINT, GRAY = '0.42 0.42 0.42', RULE = '0.80 0.77 0.70', LINEC = '0.76 0.76 0.76', IVORY = P_IVORY;
           const commands = [];
@@ -5809,7 +5816,7 @@ What former label or habit still has a strong hold on your thinking? Bring it to
           includeCertificate: !!document.getElementById('bookIncludeCertificate')?.checked,
           completedOnly: document.getElementById('bookDaysCompleted')?.checked === true,
           paperSize: document.getElementById('bookPaperSize')?.value === 'letter' ? 'letter' : 'A4',
-          theme: ['pink', 'turquoise', 'purple', 'glacier'].includes(document.getElementById('bookTheme')?.value) ? document.getElementById('bookTheme').value : 'green',
+          theme: ['pink', 'turquoise', 'purple', 'glacier'].includes(document.getElementById('bookTheme')?.value) ? document.getElementById('bookTheme').value : 'pink',
           printerFriendlyCovers: !!document.getElementById('bookPrinterFriendlyCovers')?.checked
         });
         const bookExportBackdrop = document.getElementById('bookExportBackdrop');
@@ -5843,7 +5850,7 @@ What former label or habit still has a strong hold on your thinking? Bring it to
           if (certificateField) { certificateField.disabled = !complete; certificateField.checked = true; certificateField.setAttribute('aria-describedby', 'bookCertificateReason'); }
           if (certificateReason) { certificateReason.hidden = complete; certificateReason.textContent = 'Complete all 40 days to unlock your certificate.'; }
           const themeField = document.getElementById('bookTheme');
-          if (themeField) { const accent = document.body.getAttribute('data-theme') === 'dark' ? '' : (document.body.getAttribute('data-light-accent') || ''); themeField.value = ['pink', 'turquoise', 'purple', 'glacier'].includes(accent) ? accent : 'green'; }
+          if (themeField) { const accent = document.body.getAttribute('data-theme') === 'dark' ? '' : (document.body.getAttribute('data-light-accent') || ''); themeField.value = ['pink', 'turquoise', 'purple', 'glacier'].includes(accent) ? accent : 'pink'; }
           const allDaysField = document.getElementById('bookDaysAll');
           if (allDaysField) allDaysField.checked = true;
           rememberFocus();
@@ -5995,7 +6002,7 @@ What former label or habit still has a strong hold on your thinking? Bring it to
   }
   function update() {
     try {
-      var b = document.body, key = b.getAttribute('data-theme') === 'dark' ? (b.getAttribute('data-accent') || 'green') : (b.getAttribute('data-light-accent') || 'green');
+      var b = document.body, key = b.getAttribute('data-theme') === 'dark' ? (b.getAttribute('data-accent') || 'pink') : (b.getAttribute('data-light-accent') || 'pink');
       var i1 = document.getElementById('appIcon'), i2 = document.getElementById('appTouchIcon');
       var s1 = draw(64, key), s2 = draw(180, key);
       if (i1 && s1) i1.href = s1; if (i2 && s2) i2.href = s2;
